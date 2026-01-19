@@ -6,7 +6,7 @@ function App() {
   useEffect(() => {
     console.log("Hello World"); // Original React console log
 
-    fetch('http://localhost:3001/hello') // for local dev
+    fetch('http://hello-console-secret-seankst-dev.apps.rm2.thpm.p1.openshiftapps.com/hello') // for local dev
       .then(res => res.json())
       .then(data => {
         console.log(data.message);
